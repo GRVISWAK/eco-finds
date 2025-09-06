@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.75rem 2rem;
+
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+
+  font-family: "Inter", sans-serif;
+}
+
+/* Brand */
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d6a4f;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  transition: color 0.2s ease;
+}
+
+.nav-brand:hover {
+  color: #1b4332;
+}
+
+/* Links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #2d6a4f;
+  background: rgba(45, 106, 79, 0.08);
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #2d6a4f;
+  color: #fff;
+  padding: 0.45rem 1rem;
+}
+
+.btn-primary:hover {
+  background: #1b4332;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #555;
+  padding: 0.45rem 0.8rem;
+}
+
+.btn-ghost:hover {
+  background: #f1f1f1;
+  color: #000;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-right {
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .nav-link, .btn {
+    font-size: 0.9rem;
+  }
+}

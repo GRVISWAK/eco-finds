@@ -1,0 +1,158 @@
+/* Cart.css */
+
+/* Container */
+.cart.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #1664c1;
+}
+
+.btn-danger {
+  background: #e84545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #c23636;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Error messages */
+.error {
+  background: #ffe6e6;
+  color: #e84545;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Empty cart */
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+  margin: 2rem 0;
+}
+
+/* Cart grid */
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Individual cart item card */
+.cart-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image */
+.card-media {
+  width: 100%;
+  height: 180px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.no-image {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Card body */
+.card-body {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #1a73e8;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #43a047;
+}
+
+.text-muted {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* Action buttons container */
+.card-body > div {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+/* Checkout All button wrapper */
+.cart > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.cart > div > div button {
+  font-weight: 600;
+  border-radius: 8px;
+}

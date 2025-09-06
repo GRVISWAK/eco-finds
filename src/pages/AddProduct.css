@@ -1,0 +1,104 @@
+/* AddProduct.css */
+
+.add-product-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+
+  font-family: "Inter", sans-serif;
+}
+
+.add-product-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2d6a4f;
+  text-align: center;
+}
+
+.error {
+  background: #ffe3e3;
+  color: #b00020;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+/* Button */
+button {
+  background: #2d6a4f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #1b4332;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .add-product-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+
+  .add-product-container h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,48 @@
+.purchases {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.purchases h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.purchases-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.purchases-list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.purchases-list-item:last-child {
+  border-bottom: none;
+}
+
+.purchases-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.purchases-item-title {
+  font-size: 18px;
+  color: #007bff;
+}
+
+.purchases-item-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.purchases-item-price {
+  font-size: 16px;
+  color: #28a745;
+}
